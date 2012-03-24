@@ -1,0 +1,33 @@
+- @page_class = "home"
+
+- content_for :top do
+  #home-splash
+    .container
+      = image_tag "splash.jpg"
+
+%section#download
+  %h1 Hier geht's los!
+  .content
+    %p
+      Hackety Hack bringt Dir die absoluten Grundlagen des Programmierens von Anfang an bei. Es ist keinerlei Programmiererfahrung nötig!
+    %p
+      Mit Hackety Hack wirst Du die <a href="http://www.ruby-lang.org/de/">Programmiersprache Ruby</a> lernen. Ruby wird für alle Arten von Programmen genutzt, inklusive Desktopanwendungen und Websites.
+  %a.btn.primary.large{:href => "/downloads/latest/#{@platform}"}
+    %b.download Jetzt downloaden
+    %br
+    %span.version
+      Version 1.0.1
+      - if @platform
+        für #{@platform}
+
+%section#explore
+  %h1 Lernen und Entdecken
+  .content
+    %p Hackety Hack nutzt das #{link_to "Shoes", "http://shoesrb.com/"} Toolkit, mit dem es wirklich einfach ist und viel Freunde bereitet, grafische Benutzeroberflächen zu erstellen. Es stehen Dir etliche Lektionen und Beispiele zur Verfügung, die Dir zeigen, wie Du jede Menge tolle Dinge machen kannst!
+    %p Entdecke, was andere Leute mit Hackety Hack machen! Der Bereich #{link_to t('shared.menu.main.programs'), programs_path} ist rappelvoll mit Projekten von Hackety-Nutzern. Du kannst auch Deine eigenen hochladen! Gib Deine Account-Informationen in die Hackety Hack App ein und schon ist es möglich, all die Programme, die Du erstellt hast, mit anderen zu teilen.
+
+%section#ask
+  %h1 Hilfe findest Du hier
+  .content
+    %p Du hast Fragen zu Hackety Hack? Versuch's in unserer #{link_to t('.faq', :default => 'FAQ'), "faq"}. Solltest Du dort nicht die passende Antwort finden, #{link_to "frage hier nach", support_questions_path}.
+    %p Du hast eine allgemeine Frage zum Programmieren? Stell sie im Bereich #{link_to t('shared.menu.main.questions'), questions_path}. Keine Frage ist zu groß oder zu klein, die Gemeinschaft hier hilft Dir gerne weiter.
