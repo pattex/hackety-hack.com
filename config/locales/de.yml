@@ -1,0 +1,9 @@
+de:
+  shared:
+    menu:
+      main:
+        lessons: "Lektionen"
+        programs: "Programmme"
+        questions: "Fragen"
+      user:
+        sign_up: "Neu Anmelden"

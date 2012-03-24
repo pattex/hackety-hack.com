@@ -1,8 +1,8 @@
 = semantic_menu :class => "pills" do |root|
-  - root.add "Home", root_path
-  - root.add "Blog", blog_index_path
-  - root.add "Questions", questions_path
-  - root.add "Programs", programs_path
-  - root.add "FAQ", faq_path
-  - root.add "Support", support_questions_path
+  - root.add t('.home'), root_path
+  - root.add t('.blog'), blog_index_path
+  - root.add t('shared.menu.main.questions'), questions_path
+  - root.add t('shared.menu.main.programs'), programs_path
+  - root.add t('.faq', :default => 'FAQ'), faq_path
+  - root.add t('.support'), support_questions_path
   
