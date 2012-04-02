@@ -8,8 +8,8 @@
 
 .post
   .created_at
-    = @post.created_at.strftime("Posted %B %d, %Y at %l:%M %p")
-    
+    = l(@post.created_at, :format => :posted_at)
+
   .content
     :markdown
       #{@post.content}

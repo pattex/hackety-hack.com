@@ -1,4 +1,7 @@
 de:
+  blog:
+    index:
+      the_hackety_blog: "Das Hackety Blog"
   shared:
     menu:
       main:
@@ -7,3 +10,6 @@ de:
         questions: "Fragen"
       user:
         sign_up: "Neu Anmelden"
+  time:
+    formats:
+      posted_at: "Geschrieben am %d. %B %Y um %H:%M Uhr"

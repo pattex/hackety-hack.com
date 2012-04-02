@@ -1,0 +1,16 @@
+en:
+  blog:
+    index:
+      the_hackety_blog: "The Hackety Blog"
+    show:
+      posted_at: "Posted"
+      at_time: "at %l:%M %p"
+  shared:
+    menu:
+      main:
+        lessons: "Lessons"
+        programs: "Programs"
+        questions: "Questions"
+  time:
+    formats:
+      posted_at: "Posted %B %d, %Y at %l:%M %p"

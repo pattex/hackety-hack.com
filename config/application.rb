@@ -27,5 +27,7 @@ module HacketyHackCom
       g.fixture_replacement :fabrication
       g.orm                 :mongo_mapper
     end
+
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
   end
 end
